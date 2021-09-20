@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    border: 0px;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: rgba(94, 114, 228, 0.3);
+}
+
+
+/*.card-img-top
+{
+height:300px;
+
+}
+*/
+.card
+{
+   
+
+    overflow: hidden;   
+}
