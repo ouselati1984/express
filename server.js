@@ -10,17 +10,22 @@ const midd=(req,res,next)=>{
     let time = today.getHours()
     let day = today.getDay()
     
-  if(time>8 && time<17 && day>0 && day<6) next();
+  if(time>8 && time<17 && day>0 && day<6) 
+  {
+  res.sendFile(__dirname+'/public/index.html')
+ 
+  }
     else 
+    
    
     res.sendFile(__dirname+'/public/error.html')
-    next()
+    
     }
     app.use(midd)
     app.use(express.static('public'))
     
     //routes
-app.get('/home',(req,res)=>{
+app.use('/home',(req,res)=>{
     res.sendFile(__dirname+'/public/index.html')
     })
 
